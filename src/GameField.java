@@ -6,9 +6,6 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Random;
 
-/**
- * Created by infuntis on 15/01/17.
- */
 public class GameField extends JPanel implements ActionListener{
     private final int SIZE = 320;
     private final int DOT_SIZE = 16;
@@ -70,9 +67,7 @@ public class GameField extends JPanel implements ActionListener{
             }
         } else{
             String str = "Game Over";
-            //Font f = new Font("Arial",14,Font.BOLD);
             g.setColor(Color.white);
-           // g.setFont(f);
             g.drawString(str,125,SIZE/2);
         }
     }
